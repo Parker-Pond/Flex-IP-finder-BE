@@ -1,0 +1,3 @@
+This is the backend for the flex IP checker made for sam... i mean the support team...
+
+just need to run "npm start dev" to get it running. 
