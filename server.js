@@ -6,7 +6,11 @@ const { promisify } = require("util");
 const app = express();
 const PORT = 3001;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://testlab.routedlogistics.com", // Remove trailing slash
+  })
+);
 app.use(express.json());
 
 const lookup = promisify(dns.lookup);
